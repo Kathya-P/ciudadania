@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Cuestionario - Ciudadania y Valores</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container">
+				<p class="eyebrow">Ciudadania y Valores</p>
+				<h1>Cuestionario de estudio *</h1>
+				<p class="lead">
+					Unidad 1, semana 1. Territorio, espacio geografico y dimensiones politica,
+					social, economica y cultural del territorio salvadoreno.
+				</p>
+			</div>
+		</header>
+
+		<main class="container">
+			<section class="card" id="quiz-app">
+				<div class="quiz-header">
+					<h2 id="topic-title">T1: Conceptos y territorio *</h2>
+					<div class="topic-controls">
+						<label class="topic-label" for="topic-select">Tema</label>
+						<select id="topic-select" class="topic-select" aria-label="Seleccionar tema"></select>
+						<button class="btn ghost" id="shuffle-btn" type="button">Mezclar</button>
+					</div>
+					<p class="muted">Selecciona una respuesta y revisa al instante si esta correcta ✓</p>
+				</div>
+
+				<div class="quiz-progress">
+					<span id="question-count">1 / 1</span>
+					<div class="progress-bar" aria-hidden="true">
+						<div id="progress-fill"></div>
+					</div>
+				</div>
+
+				<div class="quiz-body" id="quiz-body">
+					<div id="question-text" class="question-text"></div>
+
+					<form id="answer-form" class="answer-form">
+						<fieldset id="options-container" class="options" aria-label="Opciones"></fieldset>
+					</form>
+
+					<div id="feedback" class="feedback" aria-live="polite"></div>
+
+					<div class="quiz-actions">
+						<button class="btn" id="check-btn" type="button">Revisar</button>
+						<button class="btn ghost" id="show-btn" type="button">Mostrar respuesta</button>
+						<button class="btn ghost" id="prev-btn" type="button">Anterior</button>
+						<button class="btn" id="next-btn" type="button">Siguiente</button>
+					</div>
+
+				</div>
+
+				<div class="final-screen hidden" id="final-screen">
+					<div class="final-header">
+						<h3>Resumen final *</h3>
+						<p class="muted">Tu resultado del tema completado.</p>
+					</div>
+					<div class="stats-grid">
+						<div class="stat">
+							<div class="stat-label">Total</div>
+							<div class="stat-value" id="stats-total">0</div>
+						</div>
+						<div class="stat">
+							<div class="stat-label">Correctas</div>
+							<div class="stat-value" id="stats-correct">0</div>
+						</div>
+						<div class="stat">
+							<div class="stat-label">Incorrectas</div>
+							<div class="stat-value" id="stats-incorrect">0</div>
+						</div>
+						<div class="stat">
+							<div class="stat-label">Sin responder</div>
+							<div class="stat-value" id="stats-unanswered">0</div>
+						</div>
+						<div class="stat">
+							<div class="stat-label">Precision</div>
+							<div class="stat-value" id="stats-accuracy">0%</div>
+						</div>
+					</div>
+					<div class="final-actions">
+						<button class="btn ghost" id="review-btn" type="button">Volver a preguntas</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container">
+				<p>Hecho para estudio personal. Actualizado el 2026-02-28.</p>
+			</div>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
